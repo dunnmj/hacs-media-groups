@@ -86,10 +86,11 @@ The group entity shows as `on` if any member entity is available with a valid st
 To change which media players are in the group:
 
 1. Go to **Settings → Devices & Services → Helpers**
-2. Find your media group
-3. Click **Configure**
-4. Update the member list
-5. Click **Submit**
+2. Find your media group and click on it
+3. Click the **Settings** (⚙️) icon
+4. Select **Media player options**
+5. Update the member list
+6. Click **Submit**
 
 The group entity will reload with the updated members.
 
