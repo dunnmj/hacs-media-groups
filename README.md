@@ -55,18 +55,21 @@ A new `media_player` entity will be created with sources from all selected membe
 
 ### Source list
 
-The group entity builds a combined source list from all member media players. Each source is prefixed with the member entity's friendly name to avoid collisions:
+The group entity builds a combined source list from all member media players. Sources that are **shared** by all members are listed once by name. Sources that are **unique** to specific members are prefixed with the entity name.
+
+For example, given two media players — "Living Room" and "Kitchen" — both with "Spotify" and "AirPlay", plus "Line In" only on Kitchen:
 
 ```
-Living Room Speaker - Spotify
-Living Room Speaker - AirPlay
-Kitchen Speaker - Spotify
-Kitchen Speaker - Line In
+Spotify
+AirPlay
+Kitchen - Line In
 ```
+
+Shared sources appear without a prefix, keeping the list clean. Only sources unique to a subset of members get the entity name prefix.
 
 ### Source selection
 
-When you select a source, the integration determines which member entity owns that source and sends the `media_player.select_source` command to it.
+When you select a shared source (e.g. "Spotify"), the integration sends `media_player.select_source` to **all** member entities. When you select a prefixed source (e.g. "Kitchen - Line In"), the command is sent only to that specific member.
 
 ### Volume and mute
 
