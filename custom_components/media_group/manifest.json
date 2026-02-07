@@ -1,0 +1,10 @@
+{
+  "domain": "media_group",
+  "name": "Media Group",
+  "codeowners": [],
+  "config_flow": true,
+  "documentation": "https://github.com/dunnmj/hacs-media-groups",
+  "integration_type": "helper",
+  "iot_class": "calculated",
+  "version": "1.0.0"
+}

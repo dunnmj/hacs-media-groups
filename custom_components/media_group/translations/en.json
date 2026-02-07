@@ -1,0 +1,24 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Create media group",
+        "description": "Create a media player group that combines sources from multiple media players into one entity.",
+        "data": {
+          "name": "Name",
+          "entities": "Media players"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Media group options",
+        "data": {
+          "entities": "Media players"
+        }
+      }
+    }
+  }
+}
